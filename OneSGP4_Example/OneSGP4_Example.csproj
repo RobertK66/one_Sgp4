@@ -45,7 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Content Include="tleData.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\One_Sgp4\One_Sgp4.csproj">
@@ -53,14 +53,13 @@
       <Name>One_Sgp4</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="tleData.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>cd ..\One_Sgp4\bin\Debug
-dir * /s
-xcopy * \\V-SRV-02\RkosNuget\one_sgp4 /E /Y
-cd ..\..\..\OneSGP4_Example</PreBuildEvent>
+    <PreBuildEvent>
+      cd ..\One_Sgp4\bin\Debug
+      dir * /s
+      xcopy * \\V-SRV-02\RkosNuget\one_sgp4 /E /Y
+      cd ..\..\..\OneSGP4_Example
+    </PreBuildEvent>
   </PropertyGroup>
 </Project>
