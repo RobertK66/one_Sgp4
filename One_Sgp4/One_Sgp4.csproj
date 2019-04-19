@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -19,10 +19,10 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net40;net45</TargetFrameworks>
-    <Version>1.0.6-mypatch-4</Version>
+    <Version>1.0.7-mypatch-4</Version>
     <PackageReleaseNotes>Included Net 4.0 and Net 4.5 as TargetFrameworks</PackageReleaseNotes>
     <AssemblyVersion>1.0.*</AssemblyVersion>
-    <FileVersion>1.0.6</FileVersion>
+    <FileVersion>1.0.7</FileVersion>
     <Deterministic>false</Deterministic>
   </PropertyGroup>
 
